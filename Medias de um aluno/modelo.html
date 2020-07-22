@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercicio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Média Aluno</h1>
+    </header>
+    <section>
+        <div id="notas">
+            <p>Nota AV 1: <input type="number" name="nota1" id="nota1"></p>
+            <p>Nota AV 2: <input type="number" name="nota2" id="nota2"></p>
+            <p><input type="button" value="Gerar Média" onclick="calcul_media(nota1, nota2)"></p>
+        </div>  
+        <div id="media_final">
+            Insira as notas das AVs acima...
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Felipe Cardoso</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

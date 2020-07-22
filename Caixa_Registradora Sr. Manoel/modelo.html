@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercicio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Caixa Registradora do Sr. Manoel</h1>
+    </header>
+    <section>
+        <div id="todos_intes">
+            <p id="espaco">Preco do Item: <input type="number" name="preco" id="preco"></p>
+            <p><input type="button" value="+" onclick="acrescentar()"></p>
+        </div>  
+        <div id="itens">
+        </div>
+            
+        <div id="calculando">
+            <p><input type="button" value="Calcular" onclick="mostrar(lista)"></p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Felipe Cardoso</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
