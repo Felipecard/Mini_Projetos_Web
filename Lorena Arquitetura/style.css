@@ -1,0 +1,85 @@
+
+#paineis-sobre {
+    margin-top: 20px;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    background-image: url(img/castelo.jpg);
+    height: 100%;
+    background-size: cover; 
+    background-position: top center;
+    position: relative;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.lorena-banner {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+
+.titulo-depoimentos {
+    background-color: rgb(121, 209, 238);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.contato-select, .grupo-radio {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.grupo-radio .radio:first-child {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+footer address:last-child {
+    margin-bottom: 0;
+}
+
+@media(min-width: 768px) {
+
+    #paineis-sobre {
+        margin-top: 0;
+    }
+    
+}
+
+@media(min-width: 992px) {
+    .lorena-banner {
+        left: 0;
+        transform: translate(0, -80%);
+        width: 50%;
+    }
+
+    .lorena-bannerWrapper {
+        position: relative;
+        height: 100%;
+    }
+}
+
