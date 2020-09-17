@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>--Formulário Contato--</title>
+<meta charset="utf-8" />
+<style type="text/css">
+  body {
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 15px;
+    background-color: rgb(128, 128, 236);
+    max-width: 500px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px black;
+}
+
+input, textarea {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #babad8;
+    box-shadow: 5px 0px 9px #e9e96f;
+    background-color: #c7f7f7;
+    color: black;
+    font-weight: bold;
+}
+
+.enviar {
+    position: absolute;
+    background-color: #f86b6b;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: black;
+}
+
+textarea {
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+
+form label {
+    margin-left: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+<form name="meu_formulario">
+
+  <h1>Entre em contato</h1>
+
+  <input type="text" id="nomeid" placeholder="Felipe Cardoso" required="required" name="nome" />
+  <label for="nome">Nome</label>
+
+  <input type="cpf" id="foneid" placeholder="xxx.xxx.xxx.xx" name="cpf" />
+  <label for="fone">CPF</label>
+
+  <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+  <label for="fone">Fone</label>
+
+  <input type="email" id="emailid" placeholder="email@gmail.com" name="email" />
+  <label for="email">Email</label>
+
+  <input type="cpf" id="foneid" placeholder="xxxxxx.xxx" name="cep" />
+  <label for="cep">CEP</label>
+
+  <input type="text" id="nomeid" placeholder="Rua Vergaro" required="required" name="log" />
+  <label for="nome">Logradouro</label>
+
+  <input type="n" id="foneid" placeholder="xxx" name="n" />
+  <label for="fone">Numero</label>
+
+  <input type="text" id="nomeid" placeholder="Copacabana" required="required" name="log" />
+  <label for="nome">Bairro</label>
+
+  <input type="text" id="nomeid" placeholder="Rio de Janeiro" required="required" name="log" />
+  <label for="nome">Cidade</label>
+
+  <input type="text" id="nomeid" placeholder="RJ" required="required" name="log" />
+  <label for="nome">Estado</label>
+
+  <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+</form>
+
+<script type="text/javascript">
+
+  function Enviar() {
+
+    var nome = document.getElementById("nomeid");
+
+    if (nome.value != "") {
+        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+    }
+
+}
+  
+</script>
+</body>
+</html>
