@@ -1,6 +1,6 @@
 # Projetos Web 
 
-Pequenos projetos web, feitos como forma de estudo.
+Pequenos projetos web, feitos como forma de estudo
 
 ### Tecnologias usadas:
 - HTML
